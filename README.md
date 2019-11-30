@@ -4,7 +4,7 @@
 
 Use Git installed in WSL(windows Subsystem for Linux) from Windows and Visual Studio Code.
 
-The project was inspired by [A. R. S.](https://github.com/andy-5)'s project [andy-5/wslgit](https://github.com/andy-5/wslgit) written by Rust.   
+The project was inspired by [A. R. S.](https://github.com/andy-5)'s project [andy-5/wslgit](https://github.com/andy-5/wslgit) written by Rust.
 But why do I re-implement it by scripts, because I hope the wslgit tools could support any mount points (but not only under the `/mnt/`) and could be used without compiling.
 
 ## Usage
@@ -16,7 +16,7 @@ But why do I re-implement it by scripts, because I hope the wslgit tools could s
 
 ### 🐢 Feeling slowly? (Disable interactive shell)
 
-wslgit launch git installed in WSL in interactive shell mode by default now.   
+wslgit launch git installed in WSL in interactive shell mode by default now.
 In short, the `ssh-agent` setup in `.bashrc` script is supported. but slower then non-interactive mode.
 
 If you want disable interactive shell to reduce launch time, you can set Windows environment variable `WSLGIT_USE_INTERACTIVE_SHELL` to `false`.
@@ -36,13 +36,13 @@ If you want disable interactive shell to reduce launch time, you can set Windows
 
 ### 2019-04-16
 
-1. Fixed bug caused by Windows 10 19H1 changed the output of `mount` command 
+1. Fixed bug caused by Windows 10 19H1 changed the output of `mount` command
 	- Related pull request: <https://github.com/hangxingliu/wslgit/pull/13> (Thanks @kiroushi)
 	- Related issue: <https://github.com/hangxingliu/wslgit/issues/10>
 
 ### 2019-03-11
 
-1. **BREAKING CHANGE:** Start git installed in WSL in interactive mode. 
+1. **BREAKING CHANGE:** Start git installed in WSL in interactive mode.
 	- If you want to use non-interactive mode, **just like before**: Set Windows env variable `WSLGIT_USE_INTERACTIVE_SHELL` to `true`.
 2. Fixed error in the unix path to win path convert function.
 	- Related issue: <https://github.com/hangxingliu/wslgit/issues/11> (Thanks @rennex)
