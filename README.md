@@ -1,4 +1,4 @@
-# WSLGit
+# WSLSsh
 
 [![Build Status](https://travis-ci.org/hangxingliu/wslgit.svg?branch=master)](https://travis-ci.org/hangxingliu/wslgit)
 
@@ -9,10 +9,9 @@ But why do I re-implement it by scripts, because I hope the wslgit tools could s
 
 ## Usage
 
-1. Please ensure `git` is installed in your WSL.
-2. Copy `wslgit.sh` to the `/usr/bin/` or `~/bin` directory in your WSL.
+1. Please ensure [`sshpass`](https://github.com/innerlee/sshpass) is installed in your WSL and configured password via environment variables.
 3. Add the following config into your VSCode Settings.
-	- `{ "git.path": "C:\\path\\to\\git.bat" }`
+	- `{ "remote.SSH.path": "C:\\path\\to\\ssh.bat" }`
 
 ### 🐢 Feeling slowly? (Disable interactive shell)
 
