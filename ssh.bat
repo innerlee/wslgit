@@ -17,7 +17,7 @@ if [%1] == [] goto WITHOUT_ARGS
 	set "args=%args:\=\\%"
 
 	if %bashic% == true (
-		wsl zsh -ic 'sshpass -e ssh %args%'
+		wsl zsh -ic 'sshpass -e -y ssh %args%'
 	) else (
 		wsl ssh %args%
 	)
